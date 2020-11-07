@@ -1,0 +1,12 @@
+<h1>
+  Backend Engineer Coding Test
+</h1>
+
+
+<%= form_for PostCodes::Form.new, url: post_codes_path, remote: :true  do |f| %>
+  <p> Enter post code </p>
+  <%= f.text_field :code %>
+  <%= f.submit('Submit') %>
+<% end %>
+
+<h3 id='codeValidity'></h3>
